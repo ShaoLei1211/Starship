@@ -1,0 +1,3 @@
+public interface Is_Offense {
+void show_stats();
+}
