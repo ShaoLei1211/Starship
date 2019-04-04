@@ -1,0 +1,22 @@
+
+public class Cruise extends Starship implements Is_Offense {
+    public Cruise(String name){
+        Registry = name;
+
+        plating = new int[] {2000, 2500};
+
+        discharge = new int[] {2000, 2500};
+
+        weapon = new int[] {3000, 4000};
+
+        torpedo = new int[] {20, 35};
+
+        Hull_plating_rating = random_generate(plating);
+
+        Sheild_discharge_rating = random_generate(discharge);
+
+        Beam_weapon_power= random_generate(weapon);
+
+        Torpedo_count = random_generate(torpedo);
+    }
+}
