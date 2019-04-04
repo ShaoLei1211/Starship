@@ -1,0 +1,25 @@
+public class Escort extends Starship implements Is_Defense {
+    public Escort(String name){
+        Registry = name;
+
+        plating = new int[] {1000, 1250};
+
+        discharge = new int[] {2500, 3500};
+
+        weapon = new int[] {2500, 3000};
+
+        torpedo = new int[] {10, 20};
+
+        Hull_plating_rating = random_generate(plating);
+
+        Sheild_discharge_rating = random_generate(discharge);
+
+        Beam_weapon_power= random_generate(weapon);
+
+        Torpedo_count = random_generate(torpedo);
+
+    }
+}
+
+
+
