@@ -1,0 +1,22 @@
+
+public class Battleship extends Starship implements Is_Defense {
+    public Battleship (String name){
+        Registry = name;
+
+        plating = new int[] {3000, 5000};
+
+        discharge = new int[] {1500, 2000};
+
+        weapon = new int[] {4000, 5000};
+
+        torpedo = new int[] {40, 50};
+
+        Hull_plating_rating = random_generate(plating);
+
+        Sheild_discharge_rating = random_generate(discharge);
+
+        Beam_weapon_power= random_generate(weapon);
+
+        Torpedo_count = random_generate(torpedo);
+    }
+}
